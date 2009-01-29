@@ -46,6 +46,9 @@ import java.util.Date;
  * graduated intervals, aligning to a particular frequency.
  */
 public abstract class CalendarFrequency implements Serializable {
+	
+	private static final long serialVersionUID = 1572646914411889138L;
+	
 	protected boolean[] pattern;
 	private SimpleDateFormat dateFormatter;
 	private TimeZone timezone = TimeZone.getDefault();
